@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Lesson from "./02_components/Lesson";
+import Counter from "./03_state/Lesson";
+import CounterButton from "./04_props/Lesson";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <Lesson />
+      <Counter />
+      <CounterButton />
   </React.StrictMode>,
   document.getElementById('root')
 );
