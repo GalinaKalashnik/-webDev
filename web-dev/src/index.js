@@ -7,13 +7,15 @@ import Counter from "./03_state/Lesson";
 import CounterButton from "./04_props/Lesson";
 import {Lesson05, Counter05} from "./05_props/Lesson"
 import Events from "./06_events/Lesson";
+import ConditionalRendering from "./07_conditional_rendering/Lesson";
 
 ReactDOM.render(
   <React.StrictMode>
       {/* <Lesson />*/}
       {/* <Counter />*/}
       {/* <CounterButton />*/}
-      <Events />
+      {/*<Events />*/}
+      <ConditionalRendering />
   </React.StrictMode>,
   document.getElementById('root')
 );
