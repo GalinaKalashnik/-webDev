@@ -5,12 +5,14 @@ import * as serviceWorker from './serviceWorker';
 import Lesson from "./02_components/Lesson";
 import Counter from "./03_state/Lesson";
 import CounterButton from "./04_props/Lesson";
+import {Lesson05, Counter05} from "./05_props/Lesson"
 
 ReactDOM.render(
   <React.StrictMode>
-      <Lesson />
-      <Counter />
-      <CounterButton />
+      {/* <Lesson />*/}
+      {/* <Counter />*/}
+      {/* <CounterButton />*/}
+      <Lesson05><Counter05/></Lesson05>
   </React.StrictMode>,
   document.getElementById('root')
 );
