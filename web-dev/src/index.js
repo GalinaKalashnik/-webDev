@@ -6,13 +6,14 @@ import Lesson from "./02_components/Lesson";
 import Counter from "./03_state/Lesson";
 import CounterButton from "./04_props/Lesson";
 import {Lesson05, Counter05} from "./05_props/Lesson"
+import Events from "./06_events/Lesson";
 
 ReactDOM.render(
   <React.StrictMode>
       {/* <Lesson />*/}
       {/* <Counter />*/}
       {/* <CounterButton />*/}
-      <Lesson05><Counter05/></Lesson05>
+      <Events />
   </React.StrictMode>,
   document.getElementById('root')
 );
