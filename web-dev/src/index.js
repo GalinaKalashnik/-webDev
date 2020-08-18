@@ -12,6 +12,8 @@ import ListKeys from "./08_List_Keys/Lesson";
 import Table09 from "./09_Fragment_&_css/Lesson";
 import Form10 from "./10_Forms/Lesson";
 import Form12 from "./12_Refs/Lesson";
+import Lesson13 from "./13_HOC/Lesson";
+import LessonUI13 from "./13_HOC/LessonUI";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -23,7 +25,9 @@ ReactDOM.render(
       {/*<ListKeys />*/}
       {/*<Table09 />*/}
       {/*<Form10 />*/}
-      <Form12 />
+      {/*<Form12 />*/}
+      {/*<Lesson13 />*/}
+      <LessonUI13 />
   </React.StrictMode>,
   document.getElementById('root')
 );
