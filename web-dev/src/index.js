@@ -9,6 +9,7 @@ import {Lesson05, Counter05} from "./05_props/Lesson"
 import Events from "./06_events/Lesson";
 import ConditionalRendering from "./07_conditional_rendering/Lesson";
 import ListKeys from "./08_List_Keys/Lesson";
+import Table09 from "./09_Fragment_&_css/Lesson";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,7 +18,8 @@ ReactDOM.render(
       {/* <CounterButton />*/}
       {/*<Events />*/}
       {/*<ConditionalRendering />*/}
-      <ListKeys />
+      {/*<ListKeys />*/}
+      <Table09 />
   </React.StrictMode>,
   document.getElementById('root')
 );
