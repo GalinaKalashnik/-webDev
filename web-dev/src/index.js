@@ -10,6 +10,7 @@ import Events from "./06_events/Lesson";
 import ConditionalRendering from "./07_conditional_rendering/Lesson";
 import ListKeys from "./08_List_Keys/Lesson";
 import Table09 from "./09_Fragment_&_css/Lesson";
+import Form10 from "./10_Forms/Lesson";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,7 +20,8 @@ ReactDOM.render(
       {/*<Events />*/}
       {/*<ConditionalRendering />*/}
       {/*<ListKeys />*/}
-      <Table09 />
+      {/*<Table09 />*/}
+      <Form10 />
   </React.StrictMode>,
   document.getElementById('root')
 );
