@@ -8,6 +8,7 @@ import CounterButton from "./04_props/Lesson";
 import {Lesson05, Counter05} from "./05_props/Lesson"
 import Events from "./06_events/Lesson";
 import ConditionalRendering from "./07_conditional_rendering/Lesson";
+import ListKeys from "./08_List_Keys/Lesson";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,7 +16,8 @@ ReactDOM.render(
       {/* <Counter />*/}
       {/* <CounterButton />*/}
       {/*<Events />*/}
-      <ConditionalRendering />
+      {/*<ConditionalRendering />*/}
+      <ListKeys />
   </React.StrictMode>,
   document.getElementById('root')
 );
