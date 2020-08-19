@@ -14,6 +14,7 @@ import Form10 from "./10_Forms/Lesson";
 import Form12 from "./12_Refs/Lesson";
 import Lesson13 from "./13_HOC/Lesson";
 import LessonUI13 from "./13_HOC/LessonUI";
+import Portal14 from "./14_Portals/Lesson";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -27,7 +28,8 @@ ReactDOM.render(
       {/*<Form10 />*/}
       {/*<Form12 />*/}
       {/*<Lesson13 />*/}
-      <LessonUI13 />
+      {/*<LessonUI13 />*/}
+      <Portal14 />
   </React.StrictMode>,
   document.getElementById('root')
 );
