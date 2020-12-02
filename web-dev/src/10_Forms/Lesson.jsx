@@ -2,13 +2,13 @@ import React, {Component, Fragment} from 'react';
 const POSITION = [
     {
         id: 'fe',
-        value: 'front end',
-        title: 'front end'
+        value: 'front-end dev',
+        title: 'front-end dev'
     },
     {
         id: 'be',
-        value: 'back end',
-        title: 'back end'
+        value: 'back-end dev',
+        title: 'back-end dev'
     }
 ]
 class Form10 extends Component {
@@ -47,7 +47,7 @@ class Form10 extends Component {
         this.setState({
             inputText: '',
             textareaText: '',
-            selectText: '',
+
             showData: {
                 name: inputText,
                 text: textareaText,
@@ -83,8 +83,8 @@ class Form10 extends Component {
 
                 </form>
                 <div>
-                    <h3>{name}</h3>
-                    <h3>{text}</h3>
+                    <h1>{name}</h1>
+                    <h2>{text}</h2>
                     <h3>{position}</h3>
                 </div>
             </Fragment>
