@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
 import Lesson from "./02_components/Lesson";
 import Counter from "./03_state/Lesson";
 import CounterButton from "./04_props/Lesson";
@@ -18,6 +20,11 @@ import Portal14 from "./14_Portals/Lesson";
 import Lesson15 from "./15_Context/Lesson";
 import News16 from "./16_API/Lesson";
 
+import Router from './18_Router/Router';
+import Home from './18_Router/components/home/home';
+import Contacts from './18_Router/components/contacts/contacts';
+import Posts from './18_Router/components/posts/posts';
+
 ReactDOM.render(
   <React.StrictMode>
       {/* <Lesson />*/}
@@ -33,7 +40,16 @@ ReactDOM.render(
       {/*<LessonUI13 />*/}
       {/*<Portal14 />*/}
       {/*<Lesson15 />*/}
-      <News16 />
+      {/*<News16 />*/}
+
+      <BrowserRouter>
+          <Router>
+              <Route exact path='/' component={Home} />
+              <Route path='/contacts' component={Contacts} />
+              <Route path='/posts' component={Posts} />
+          </Router>
+      </BrowserRouter>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
