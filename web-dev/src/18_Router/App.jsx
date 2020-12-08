@@ -5,7 +5,7 @@ import Footer from './components/footer/footer';
 
 
 
-const Router = ( {children} ) => (
+const App = ({children} ) => (
     <Fragment>
         <Header />
         {children}
@@ -13,5 +13,5 @@ const Router = ( {children} ) => (
     </Fragment>
 )
 
-export default Router;
+export default App;
 
