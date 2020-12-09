@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes, {func} from 'prop-types';
+import PropTypes from 'prop-types';
 
 import './todo-item.css';
 
@@ -14,15 +14,15 @@ const ToDoItem = ({ text, isCompleted, removeTask, id, completeTask }) => (
 ToDoItem.propTypes = {
   text: PropTypes.string,
   isCompleted: PropTypes.bool,
-    removeTask: PropTypes.func,
-    id: PropTypes.number
+  removeTask: PropTypes.func,
+  id: PropTypes.number,
 }
 
 ToDoItem.defaultProps = {
   text: '',
   isCompleted: false,
-    removeTask: () => {},
-    id: 0
+  removeTask: () => {},
+  id: 0,
 }
 
 export default ToDoItem;
