@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 // import {Lesson05, Counter05} from "./05_props/Lesson"
@@ -17,12 +18,15 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 // import Lesson15 from "./15_Context/Lesson";
 // import News16 from "./16_API/Lesson";
 
-import App from './18_Router/App';
-import Home from './18_Router/components/home/home';
-import Contacts from './18_Router/components/contacts/contacts';
-import Posts from './18_Router/components/posts/posts';
-import Post from './18_Router/components/post/post';
-import Error from './18_Router/components/error/error';
+// import App from './18_Router/App';
+// import Home from './18_Router/components/home/home';
+// import Contacts from './18_Router/components/contacts/contacts';
+// import Posts from './18_Router/components/posts/posts';
+// import Post from './18_Router/components/post/post';
+// import Error from './18_Router/components/error/error';
+
+import App from "./21_Redux_To_Do/App";
+import store from './21_Redux_To_Do/store';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -41,17 +45,21 @@ ReactDOM.render(
       {/*<Lesson15 />*/}
       {/*<News16 />*/}
 
-      <BrowserRouter>
-          <App>
-              <Switch>
-                  <Route exact path='/' component={Home} />
-                  <Route path='/contacts' component={Contacts} />
-                  <Route exact path='/posts' component={Posts} />
-                  <Route path='/posts/:id' component={Post} />
-                  <Route path='*' component={Error} />
-              </Switch>
-          </App>
-      </BrowserRouter>
+      {/*<BrowserRouter>*/}
+      {/*    <App>*/}
+      {/*        <Switch>*/}
+      {/*            <Route exact path='/' component={Home} />*/}
+      {/*            <Route path='/contacts' component={Contacts} />*/}
+      {/*            <Route exact path='/posts' component={Posts} />*/}
+      {/*            <Route path='/posts/:id' component={Post} />*/}
+      {/*            <Route path='*' component={Error} />*/}
+      {/*        </Switch>*/}
+      {/*    </App>*/}
+      {/*</BrowserRouter>*/}
+
+      <Provider store={store}>
+          <App />
+      </Provider>
 
   </React.StrictMode>,
   document.getElementById('root')
